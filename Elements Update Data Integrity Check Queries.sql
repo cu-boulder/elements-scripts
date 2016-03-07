@@ -5,7 +5,7 @@ select count(*)
 WHERE e.[Is Current Staff] = 1
   AND e.[Is Local] = 0
   AND e.[Proprietary ID] = f.[FIS_ID]
-  AND e.[Academic Rank] collate database_default = f.[ACADEMIC_RANK]
+  -- AND e.[Academic Rank] collate database_default = f.[ACADEMIC_RANK]
   AND e.[Email] collate database_default = f.[EMAIL_ADDRESS]
   AND e.[Faculty Type] collate database_default = f.[FACULTY_TYPE]
   AND e.[First Name] collate database_default = f.[FIRST_NAME]
@@ -41,7 +41,7 @@ select f.[ACADEMIC_RANK]
 WHERE e.[Is Current Staff] = 1
   AND e.[Is Local] = 0
   AND e.[Proprietary ID] = f.[FIS_ID]
-  AND e.[Academic Rank] collate database_default = f.[ACADEMIC_RANK]
+  -- AND e.[Academic Rank] collate database_default = f.[ACADEMIC_RANK]
   AND e.[Email] collate database_default = f.[EMAIL_ADDRESS]
   AND e.[Faculty Type] collate database_default = f.[FACULTY_TYPE]
   AND e.[First Name] collate database_default = f.[FIRST_NAME]
