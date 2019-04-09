@@ -7,6 +7,7 @@ When  [Refreshing Elements Target Instances (Dev, Test, Staging) With Data from 
   * bounds-checks.sql
   * user-search-settings.sql
     * save the outputs of this to a file, run a checksum before and and after to compare
+
 To test CUBE upgrades, run:
 
   * run update-data-integrity-check.sql
