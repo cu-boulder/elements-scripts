@@ -1,6 +1,6 @@
 /****** Check that HR Feed data exported from FIS match values imported into Elements  ******/
 select count(*)
- FROM "LAON-DEV"..FACULTY_TEST.ELEMENTS_HR_FEED_VIEW f,
+ FROM "FACDB"..FACULTY_TEST.ELEMENTS_HR_FEED_VIEW f,
       [elements-test-reporting].[dbo].[User] e
 WHERE e.[Is Current Staff] = 1
   AND e.[Is Local] = 0
@@ -36,7 +36,7 @@ select f.[ACADEMIC_RANK]
       ,f.[TENURE_LOCUS]
       ,f.[TENURE_SECOND_LOCUS]
       ,f.[IDENTIKEY_USERNAME]
- FROM "LAON-DEV"..FACULTY_TEST.ELEMENTS_HR_FEED_VIEW f,
+ FROM "FACDB"..FACULTY_TEST.ELEMENTS_HR_FEED_VIEW f,
       [elements-test-reporting].[dbo].[User] e
 WHERE e.[Is Current Staff] = 1
   AND e.[Is Local] = 0
